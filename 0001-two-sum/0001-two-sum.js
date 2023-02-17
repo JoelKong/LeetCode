@@ -4,13 +4,17 @@
  * @return {number[]}
  */
 var twoSum = (nums, target, map = new Map()) => {
-    let complacent;
-    for (let i = 0; i < nums.length; i++) {
-        complacent = target - nums[i]
-        let complacentIndex = map.get(complacent)
-        if (map.has(complacent)) return [i, complacentIndex]
-        map.set(nums[i], i)
+    for (let index = 0; index < nums.length; index++) {
+        const num = nums[index];
+        const complement = (target - num);
+        const sumIndex = map.get(complement);
+
+        const isTarget = map.has(complement)
+        if (isTarget) return [ index, sumIndex ];
+
+        map.set(num, index);                          
     }
+
 }
 
 // initialise a hashmap
