@@ -16,6 +16,5 @@ var containsDuplicate = function(nums) {
 
 
 // loop through every single element in the array
-// add as key and + 1 to frequency if it exists
-// if it doesnt, initialise to 1
-// loop through the hashmap and see if frequency is more than 1, return true if positive, return false if negative
+// add as key initialise to 1
+// if key of that number is going to increment again, return true
