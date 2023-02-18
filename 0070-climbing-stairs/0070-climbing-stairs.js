@@ -18,3 +18,18 @@ var climbStairs = function(n) {
 // initialise at 2 since we already calculate 2 steps and loop till end of n
 // to calculate the next step is always the next step + the next next step
 // return lasttwosteps[n]
+
+// function countDistinctWays(n, memo = {}) {
+//   if (n === 0 || n === 1) {
+//     return 1;
+//   }
+
+//   if (memo[n]) {
+//     return memo[n];
+//   }
+
+//   const result = countDistinctWays(n - 1, memo) + countDistinctWays(n - 2, memo);
+//   memo[n] = result;
+
+//   return result;
+// }
