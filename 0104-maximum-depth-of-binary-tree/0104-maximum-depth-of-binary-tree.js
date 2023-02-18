@@ -18,3 +18,7 @@
      return height + 1
      
 }
+ 
+ 
+// if no root return 0
+// search the left and right recursively while calculating the max height and + 1 to the recursive call
