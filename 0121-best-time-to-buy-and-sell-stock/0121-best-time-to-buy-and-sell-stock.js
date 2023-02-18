@@ -20,3 +20,7 @@ var maxProfit = function(prices) {
     return maxProfit
 };
 
+
+// set 2 pointers at the start and start + 1
+// compare both values, if future value is less than start, set left pointer to be the right pointer and +1 to right pointer
+// if not calculate the profit under a temp variable and find the maximum of the maxProfit and tempProfit
