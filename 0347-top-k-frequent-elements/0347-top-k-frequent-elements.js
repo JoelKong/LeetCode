@@ -13,7 +13,6 @@ var topKFrequent = function(nums, k, map = {}) {
             map[nums[i]]++
         }
     }
-    console.log(map)
     
     for (key in map) {
         if (!arrCount[map[key]]) {
