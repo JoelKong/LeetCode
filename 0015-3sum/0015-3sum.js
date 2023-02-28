@@ -40,3 +40,6 @@ var threeSum = function(nums) {
 // while left less than right, calculate 3sum by adding all 3 together. If more than 0 right-- if less than 0 left++
 // if same push the 3 numbers in a array to res then l++ and r--
 // while left pointer num is equal to the previous num and left less than right, l++
+
+// Time: O(n2)
+// Space: O(n)
