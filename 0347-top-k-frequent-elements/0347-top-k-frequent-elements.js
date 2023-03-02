@@ -40,3 +40,9 @@ var topKFrequent = function(nums, k, map = {}) {
 // loop through the length of the array - 1 and check if theres a filled array inside first, then loop through that filled array to push the elements in res. if res more than k return res
 
 
+
+
+// create an array and with a length of nums.length + 1
+// store the frequencies in a map with the number being the key and freq being the values
+// loop over my map and check whether arr[map[i]] exists. if it doesnt, set it to be []. then push the key to the array
+// loop over my array starting from arr.length - 1 and check whether the index has anything inside. If it does, loop through the inner array and push the numbers to my result. if result = k then return result.
