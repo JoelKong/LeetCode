@@ -22,3 +22,4 @@ var lengthOfLongestSubstring = function (s) {
 // set left pointer to 0, our right is going to be constantly shifting, max substring = 0
 // loop through the string with r. while the set contains the char, delete the number in the set with the left pointer. then increment the left
 // if not add the right pointer to the set and calculate math.max of the current and set.size
+
