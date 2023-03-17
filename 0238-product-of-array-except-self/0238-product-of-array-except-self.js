@@ -20,3 +20,10 @@ var productExceptSelf = function(nums) {
     return res
     
 };
+
+
+
+
+
+
+
