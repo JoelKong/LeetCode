@@ -32,6 +32,14 @@ var threeSum = function(nums) {
     return res;
 }
 
+// init res, left pointer = 0
+// sort the array from lowest to highest
+// setup a loop and if the current number is > 0 break
+// check the prevnumber to see whether it is the same as my current number, if it is then continue because we dont want duplicates
+// left pointer = current index + 1 right pointer to be the end of the array
+// calculate 3sum, if number more than 0 decrease right pointer, else increase left pointer
+// if the 3sum is 0, push the 3 numbers to my array, while left < right && current is not equal to prev
+
 // sort from lowest to highest first
 // loop through the sorted list and set current number
 // if its more than 0 break cause everything afterwards gonna be positive already
@@ -43,3 +51,63 @@ var threeSum = function(nums) {
 
 // Time: O(n2)
 // Space: O(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
