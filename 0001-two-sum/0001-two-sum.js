@@ -21,3 +21,33 @@ var twoSum = (nums, target, map = new Map()) => {
 // loop through the array and store the target - value in a variable complacent
 // if complacent exists in the map, return the complacent index and the current index
 // else store the number in the map with the value as the index in the hashmap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
