@@ -24,3 +24,9 @@ var longestConsecutive = function(nums, maxScore = 0) {
 // if it exists init score to 0 and set current number
 // then continue while loop and check whether the right neighbour exists. if it does just keep adding to score and to currentnum
 // then set max score to be the math.max of the current loop's score and its max
+
+
+
+
+
+
