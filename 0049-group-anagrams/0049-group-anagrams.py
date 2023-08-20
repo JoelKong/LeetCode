@@ -4,6 +4,7 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
+
         hashmap = collections.defaultdict(list)
         
         for string in strs:
@@ -11,4 +12,5 @@ class Solution(object):
             for char in string:
                 count[ord(char) - ord('a')] += 1
             hashmap[tuple(count)].append(string)
+            
         return hashmap.values()
