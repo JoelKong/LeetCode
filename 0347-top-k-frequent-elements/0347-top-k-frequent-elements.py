@@ -14,9 +14,9 @@ class Solution(object):
         
         for n, c in count.items():
             freq[c].append(n)
-            
+        
         res = []
-            
+        
         for n in range(len(freq) - 1, 0, -1):
             for element in freq[n]:
                 res.append(element)
