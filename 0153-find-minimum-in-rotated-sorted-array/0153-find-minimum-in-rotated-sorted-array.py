@@ -15,3 +15,8 @@ class Solution(object):
             else:
                 r = mid
         return nums[l]
+    
+    
+    
+    
+    
