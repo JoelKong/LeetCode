@@ -4,21 +4,22 @@ class Solution(object):
         :type nums: List[int]
         :type k: int
         :rtype: List[int]
+        
         """
         
-        count = {}
-        freq = [[] for i in range(len(nums) + 1)]
-        
-        for n in nums:
-            count[n] = 1 + count.get(n, 0)
-        
-        for n, c in count.items():
-            freq[c].append(n)
-        
+        bucketNums = [[] for i in range(len(nums) + 1)]
+        hashNums = {}
         res = []
         
-        for n in range(len(freq) - 1, 0, -1):
-            for element in freq[n]:
-                res.append(element)
+        for n in nums:
+            hashNums[n] = 1 + hashNums.get(n, 0)
+        
+        for item, count in hashNums.items():
+            bucketNums[count].append(item)
+            
+        for i in range(len(bucketNums) - 1, 0, -1):
+            for j in bucketNums[i]:
+                res.append(j)
                 if len(res) == k:
                     return res
+        
