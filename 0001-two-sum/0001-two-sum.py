@@ -4,10 +4,14 @@ class Solution(object):
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
+
         """
-        hashmap = {}
+        
+        numCount = {}
+        
         for i, n in enumerate(nums):
-            diff = target - n
-            if diff in hashmap:
-                return [hashmap[diff], i]
-            hashmap[n] = i
+            complement = target - n
+            if complement in numCount:
+                return [numCount[complement],i]
+            numCount[n] = i
+    
