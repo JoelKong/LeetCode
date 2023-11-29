@@ -6,13 +6,13 @@ class Solution(object):
         """
         
         numSet = set(nums)
-        longest = 0
+        maxLength = 0
         
         for n in nums:
             if (n - 1) not in numSet:
                 length = 1
-                while (length + n) in numSet:
+                while (n + length) in numSet:
                     length += 1
-                longest = max(length, longest)
-                
-        return longest
+                maxLength = max(maxLength, length)
+                    
+        return maxLength
