@@ -18,3 +18,4 @@ class Solution(object):
             postfix *= nums[n]
             
         return res
+    
