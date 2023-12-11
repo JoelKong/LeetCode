@@ -4,9 +4,9 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        hashset = set()
-        for n in nums:
-            if n in hashset:
+        numSet = set()
+        for num in nums:
+            if num in numSet:
                 return True
-            hashset.add(n)
+            numSet.add(num)
         return False
