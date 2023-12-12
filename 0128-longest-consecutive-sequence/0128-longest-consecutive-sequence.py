@@ -5,6 +5,8 @@ class Solution(object):
         :rtype: int
         """
         
+    
+    
         numSet = set(nums)
         maxLength = 0
         
@@ -16,3 +18,9 @@ class Solution(object):
                 maxLength = max(maxLength, length)
                     
         return maxLength
+    
+    
+    
+    
+    
+    
