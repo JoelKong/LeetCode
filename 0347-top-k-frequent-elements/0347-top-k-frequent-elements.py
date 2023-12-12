@@ -17,9 +17,12 @@ class Solution(object):
         for item, count in hashNums.items():
             bucketNums[count].append(item)
             
-        for i in range(len(bucketNums) - 1, 0, -1):
+        for i in range(len(bucketNums) - 1, -1, -1):
             for j in bucketNums[i]:
                 res.append(j)
                 if len(res) == k:
                     return res
+        
+        
+    
         
