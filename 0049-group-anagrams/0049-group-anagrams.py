@@ -14,3 +14,36 @@ class Solution(object):
             hashmap[tuple(count)].append(string)
             
         return hashmap.values()
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
