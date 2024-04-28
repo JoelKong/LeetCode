@@ -9,7 +9,7 @@ class Solution(object):
         while l < r:
             while l < r and s[l].isalnum() is not True:
                 l += 1
-            while r > l and s[r].isalnum() is not True:
+            while l < r and s[r].isalnum() is not True:
                 r -= 1          
             
             if (s[l].lower() != s[r].lower()):
@@ -29,3 +29,14 @@ class Solution(object):
 #             or ord("a") <= ord(c) <= ord("z")
 #             or ord("0") <= ord(c) <= ord("9")
 #         )
+
+
+
+
+
+
+
+
+
+
+
