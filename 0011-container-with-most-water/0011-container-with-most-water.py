@@ -12,9 +12,30 @@ class Solution(object):
             area = (r - l) * min(height[l], height[r])
             maxArea = max(maxArea, area)
             
-            if height[l] < height[r]:
+            if height[l] <= height[r]:
                 l += 1
             else:
                 r -= 1
         
         return maxArea
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
