@@ -5,24 +5,19 @@ class Solution(object):
         :rtype: int
         """
 
+        maxProfit = 0
+        left = 0
 
-        l, r = 0, 1
-        maxPrice = 0
-
-        while r < len(prices):
-            if prices[l] < prices[r]:
-                maxPrice = max(maxPrice, prices[r] - prices[l])
-                r += 1
+        for i in range(1, len(prices)):
+            if (prices[left] > prices[i]):
+                left = i
             else:
-                l = r
-                r += 1
-
-
-        return maxPrice
+                profit = prices[i] - prices[left]
+                maxProfit = max(profit, maxProfit)
 
 
 
-
+        return maxProfit
 
 
 
