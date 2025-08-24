@@ -7,7 +7,7 @@ class Solution(object):
         intervals.sort(key = lambda i: i[0])
         res = [intervals[0]]
 
-        for start, end in intervals:
+        for start, end in intervals[1:]:
             lastEnd = res[-1][1]
             if start <= lastEnd:
                 res[-1][1] = max(end, lastEnd)
