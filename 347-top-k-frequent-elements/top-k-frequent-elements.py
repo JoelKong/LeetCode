@@ -13,22 +13,22 @@ class Solution(object):
         # return the min heap
 
         hashNums = {}
+        minHeap = []
         res = []
 
-        for n in nums:
-            hashNums[n] = 1 + hashNums.get(n, 0)
+        for num in nums:
+            hashNums[num] = 1 + hashNums.get(num, 0)
         
-        minHeap = []
         for element, count in hashNums.items():
             heapq.heappush(minHeap, (count, element))
             if len(minHeap) > k:
                 heapq.heappop(minHeap)
-
-        for i in range(len(minHeap)):
-            res.append(minHeap[i][1])
-
-        return res
         
+        for combination in minHeap:
+            res.append(combination[1])
+        
+        return res
+
         
         
         
