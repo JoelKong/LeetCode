@@ -5,11 +5,14 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+        
+        hashNums = {}
 
-        numsMap = {}
+        for i in range(len(nums)):
+            complement = target - nums[i]
+            if complement in hashNums:
+                return [hashNums[complement], i]
+            
+            hashNums[nums[i]] = i
 
-        for i, v in enumerate(nums):
-            complement = target - v
-            if complement in numsMap:
-                return [i, numsMap[complement]]
-            numsMap[v] = i
+        return []
