@@ -9,13 +9,11 @@ class Solution(object):
         left = 0
 
         for i in range(1, len(prices)):
-            if (prices[left] > prices[i]):
+            if prices[left] > prices[i]:
                 left = i
             else:
                 profit = prices[i] - prices[left]
                 maxProfit = max(profit, maxProfit)
-
-
 
         return maxProfit
 
